@@ -1,0 +1,85 @@
+canvas {
+    background-color: #333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Games', sans-serif;                                
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
+main {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.paddle {
+    width: 10px;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+}
+
+#paddle1 {
+    left: 20px;
+}
+
+#paddle2 {
+    right: 20px;
+}
+
+.ball {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.controles {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: #FFF;
+    margin-top: 1.25rem;
+}
+
+.player1 {
+    width: 50%;
+    padding: 1rem;
+}
+
+.player2 {
+    width: 50%;
+    text-align: right;
+    padding: 1rem;
+}
+
+button {
+    width: 10rem;
+    height: 4rem;
+    margin-top: 1rem;
+    background-color: black;
+    border: none;
+    font-family: 'Games', sans-serif;
+    font-size: 1.5em;
+    color: #FFF;
+    cursor: pointer;
+}
