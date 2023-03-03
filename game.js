@@ -177,33 +177,17 @@ document.addEventListener('keyup', function(event) {
     }
 });
 
-function setupControls() {
-    document.addEventListener("keydown", function (event) {
-      if (event.keyCode === 87) { // tecla W
-        player1.moveUp();
-      } else if (event.keyCode === 83) { // tecla S
-        player1.moveDown();
-      } else if (event.keyCode === 38) { // tecla de seta para cima
-        player2.moveUp();
-      } else if (event.keyCode === 40) { // tecla de seta para baixo
-        player2.moveDown();
-      }
-    });
-  }
-
 // Define a função para atualizar o jogo a cada quadro
 function update() {
     iniciar.style.display = "none";
 
     antiVideo.style.zIndex = "2";
     
-    video.style.display = "block";
+    video.style.visibility = "visible";
 
     titulo.style.color = "white";
 
     tema.volume = 0.25;
-
-    tema.loop = true;
 
     tema.play();
 
